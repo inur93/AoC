@@ -4,7 +4,7 @@ public class Day1
 {
     public static async Task<(List<int> left, List<int> right)> GetInput(string file)
     {
-        var input = await FileParser.ParseFile(file, "   ");
+        var input = await FileParser.GetNumbers(file, "   ");
         var right = input.Select(x => x[1]).Order().ToList();
         var left = input.Select(x => x[0]).Order().ToList();
         return (left, right);

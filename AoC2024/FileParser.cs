@@ -2,14 +2,20 @@
 
 internal static class FileParser
 {
-    public static async Task<IEnumerable<int[]>> ParseFile(string inputFile, string separator)
+    public static async Task<IEnumerable<int[]>> GetNumbers(string inputFile, string separator)
     {
         var rows = await File.ReadAllLinesAsync("Input/" + inputFile + ".txt");
         return rows.Select(row => row.Split(separator).Select(int.Parse).ToArray());
     }
 
-    public static async Task<string> ParseFile(string inputFile)
+    public static async Task<string> GetText(string inputFile)
     {
         return await File.ReadAllTextAsync("Input/" + inputFile + ".txt");
+    }
+
+    public static async Task<IEnumerable<char[]>> GetCharacters(string inputFile)
+    {
+        var lines = await File.ReadAllLinesAsync("Input/" + inputFile + ".txt");
+        return lines.Select(x => x.ToCharArray());
     }
 }

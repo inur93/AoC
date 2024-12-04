@@ -10,7 +10,7 @@ public partial class Day3
 
     public async Task Puzzle1(string inputFile, int expectedResult)
     {
-        var input = await FileParser.ParseFile(inputFile);
+        var input = await FileParser.GetText(inputFile);
 
         var sum = Puzzle1().Matches(input).Select(match =>
             {
@@ -28,7 +28,7 @@ public partial class Day3
 
     public async Task Puzzle2(string inputFile, int expectedResult)
     {
-        var input = await FileParser.ParseFile(inputFile);
+        var input = await FileParser.GetText(inputFile);
 
         var sum = 0;
         var enabled = true;

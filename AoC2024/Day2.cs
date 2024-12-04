@@ -4,7 +4,7 @@ public class Day2
 {
     public static async Task<IEnumerable<int[]>> GetInput(string file)
     {
-        return await FileParser.ParseFile(file, " ");
+        return await FileParser.GetNumbers(file, " ");
     }
 
     public static bool IsValidReport(int[] report)
