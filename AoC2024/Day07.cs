@@ -1,8 +1,9 @@
 ﻿
 namespace AoC2024;
 
-public partial class Day7
+public partial class Day07
 {
+
     [Test]
     [Arguments("07S", 3749, new string[] { "+", "*" })]
     [Arguments("07", 1708857123053, new string[] { "+", "*" })]

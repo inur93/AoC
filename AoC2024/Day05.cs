@@ -1,7 +1,7 @@
 ﻿
 namespace AoC2024;
 
-public partial class Day5
+public partial class Day05
 {
     [Test]
     [Arguments("05AS", "05BS", 143)]

@@ -1,6 +1,6 @@
 ﻿namespace AoC2024;
 
-public class Day1
+public class Day01
 {
     public static async Task<(List<int> left, List<int> right)> GetInput(string file)
     {
@@ -11,8 +11,8 @@ public class Day1
     }
 
     [Test]
-    [Arguments("day1-test", 11)]
-    [Arguments("day1", 2815556)]
+    [Arguments("01S", 11)]
+    [Arguments("01", 2815556)]
 
     public async Task Puzzle1(string inputFile, int expectedResult)
     {
@@ -22,8 +22,8 @@ public class Day1
     }
 
     [Test]
-    [Arguments("day1-test", 31)]
-    [Arguments("day1", 23927637)]
+    [Arguments("01S", 31)]
+    [Arguments("01", 23927637)]
     public async Task Puzzle2(string inputFile, int expectedResult)
     {
         var (left, right) = await GetInput(inputFile);

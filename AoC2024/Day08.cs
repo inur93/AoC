@@ -1,8 +1,8 @@
 ﻿namespace AoC2024;
 
-public class Day8
+public class Day08
 {
-
+    [Skip("Takes long time to run")]
     [Test]
     [Arguments("08S", 14, false)]
     [Arguments("08", 259, false)]

@@ -2,11 +2,11 @@
 
 namespace AoC2024;
 
-public partial class Day3
+public partial class Day03
 {
     [Test]
-    [Arguments("day3-test", 161)]
-    [Arguments("day3", 157621318)]
+    [Arguments("03S", 161)]
+    [Arguments("03", 157621318)]
 
     public async Task Puzzle1(string inputFile, int expectedResult)
     {
@@ -23,8 +23,8 @@ public partial class Day3
     }
 
     [Test]
-    [Arguments("day3-2-test", 48)]
-    [Arguments("day3-2", 79845780)]
+    [Arguments("03BS", 48)]
+    [Arguments("03B", 79845780)]
 
     public async Task Puzzle2(string inputFile, int expectedResult)
     {

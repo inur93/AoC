@@ -1,6 +1,6 @@
 ﻿namespace AoC2024;
 
-public class Day2
+public class Day02
 {
     public static async Task<IEnumerable<int[]>> GetInput(string file)
     {
@@ -27,8 +27,8 @@ public class Day2
     }
 
     [Test]
-    [Arguments("day2-test", 2)]
-    [Arguments("day2", 252)]
+    [Arguments("02S", 2)]
+    [Arguments("02", 252)]
 
     public async Task Puzzle1(string inputFile, int expectedResult)
     {
@@ -38,8 +38,8 @@ public class Day2
     }
 
     [Test]
-    [Arguments("day2-test", 4)]
-    [Arguments("day2", 324)]
+    [Arguments("02S", 4)]
+    [Arguments("02", 324)]
     public async Task Puzzle2(string inputFile, int expectedResult)
     {
         var input = await GetInput(inputFile);
