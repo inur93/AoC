@@ -1,9 +1,6 @@
-﻿
+﻿namespace AoC2024.Models;
 
-
-namespace AoC2024;
-
-public record Vector(int x, int y)
+public record Vector(long x, long y)
 {
     internal Vector Add(Vector other)
     {

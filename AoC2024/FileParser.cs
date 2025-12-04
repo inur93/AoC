@@ -8,6 +8,12 @@ internal static class FileParser
         return rows.Select(row => row.Split(separator).Select(int.Parse).ToArray());
     }
 
+    public static async Task<IEnumerable<string[]>> GetLines(string inputFile, string separator)
+    {
+        var rows = await File.ReadAllLinesAsync("Input/" + inputFile + ".txt");
+        return rows.Select(row => row.Split(separator).ToArray());
+    }
+
     public static async Task<IEnumerable<string>> GetLines(string inputFile)
     {
         var rows = await File.ReadAllLinesAsync("Input/" + inputFile + ".txt");

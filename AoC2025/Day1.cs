@@ -1,14 +1,14 @@
 ﻿using System.Reflection;
 
-namespace AdventOfCode2025;
+namespace AoC2025;
 
 public class Day1
 {
     [Theory]
-    [InlineData("AdventOfCode2025.Input.d1ps.txt", 3, false)]
-    [InlineData("AdventOfCode2025.Input.d1p1.txt", 1023, false)]
-    [InlineData("AdventOfCode2025.Input.d1ps.txt", 6, true)]
-    [InlineData("AdventOfCode2025.Input.d1p1.txt", 5899, true)]
+    [InlineData("AoC2025.Input.d1ps.txt", 3, false)]
+    [InlineData("AoC2025.Input.d1p1.txt", 1023, false)]
+    [InlineData("AoC2025.Input.d1ps.txt", 6, true)]
+    [InlineData("AoC2025.Input.d1p1.txt", 5899, true)]
     public void Puzzle1(string inputFile, int expected, bool countRoundTrips)
     {
         // get input from embedded resource

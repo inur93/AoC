@@ -1,8 +1,8 @@
-﻿namespace AoC2024;
+﻿namespace AoC2024.Models;
 
 internal class Block
 {
-    public int Id { get; set; } 
+    public int Id { get; set; }
 
     public int Start { get; set; }
 

@@ -1,15 +1,15 @@
 ﻿using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode2025;
+namespace AoC2025;
 
 public class Day2
 {
     [Theory]
-    [InlineData("AdventOfCode2025.Input.d2ps.txt", 1227775554, false)]
-    [InlineData("AdventOfCode2025.Input.d2p1.txt", 28844599675, false)]
-    [InlineData("AdventOfCode2025.Input.d2ps.txt", 4174379265, true)]
-    [InlineData("AdventOfCode2025.Input.d2p1.txt", 48778605167, true)]
+    [InlineData("AoC2025.Input.d2ps.txt", 1227775554, false)]
+    [InlineData("AoC2025.Input.d2p1.txt", 28844599675, false)]
+    [InlineData("AoC2025.Input.d2ps.txt", 4174379265, true)]
+    [InlineData("AoC2025.Input.d2p1.txt", 48778605167, true)]
     public void Puzzle1(string inputFile, long expected, bool multipleMatches)
     {
         // get input from embedded resource

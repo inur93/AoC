@@ -1,5 +1,6 @@
 ﻿
 using System.Runtime.CompilerServices;
+using AoC2024.Models;
 
 namespace AoC2024;
 
@@ -145,10 +146,10 @@ public class Side
 
     public bool Horizontal { get; set; }
 
-    public int From { get; set; }
+    public long From { get; set; }
 
-    public int To { get; set; }
-    public int Position { get; internal set; }
+    public long To { get; set; }
+    public long Position { get; internal set; }
 }
 public class Plot
 {

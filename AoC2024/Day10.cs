@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using AoC2024.Models;
 using TUnit.Assertions.Extensions;
 
 namespace AoC2024;
